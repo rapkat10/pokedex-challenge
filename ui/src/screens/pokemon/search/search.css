@@ -1,0 +1,103 @@
+.search-bar-main {
+  position: fixed;
+  top: 1%;
+  z-index: 2;
+  width: 40vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.search-input {
+  font-size: 20px;
+  padding-left: 15px;
+  border-radius: 15px 15px 0px 0px;
+  outline: none;
+}
+
+#search-link-list {
+  background-color: rgba(255, 255, 255, 1);
+  font-size: 16px;
+  padding-left: 15px;
+  border-radius: 0px 0px 15px 15px;
+  outline: none;
+  max-height: 85vh;
+  overflow-y: scroll;
+  border: 3px solid black;
+  border-top: none;
+}
+
+.screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* z-index: 1; */
+}
+
+
+/* Filters */
+
+.radio-btns-div{
+  position: fixed;
+  top: 20%;
+  left: 10%;
+  width: 15vw;
+  border: 3px solid purple;
+}
+
+.radio-btns-div>* {
+  margin: 10px;
+}
+
+.radio-labels {
+  font-size: 10px;
+  margin: 3px;
+}
+
+.radio-input {
+  cursor: pointer;
+}
+
+.types {
+  border: 1px solid green;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.weaknesses {
+  border: 1px solid red;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.filter-results-div {
+  position: fixed;
+  top: 15%;
+  left: 28%;
+  width: 45vw;
+  z-index: 1;
+}
+
+#filter-link-list {
+  background-color: rgba(255, 255, 255, 1);
+  font-size: 16px;
+  padding-left: 15px;
+  border-radius: 0px 0px 15px 15px;
+  outline: none;
+  max-height: 70vh;
+  overflow-y: scroll;
+  border: 3px solid black;
+  border-top: none;
+}
+
+.filter-submit {
+  border-radius: 15px;
+  background-color: lightgreen;
+}
+
+.filter-reset {
+  border-radius: 15px;
+  background-color: lightcoral;
+}

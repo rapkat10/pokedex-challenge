@@ -3,7 +3,8 @@ import styled from 'styled-components'
 import { RouteComponentProps, Link } from '@reach/router'
 import { useQuery, gql } from '@apollo/client'
 import { Container as NesContainer } from 'nes-react'
-
+import Search from './search/search'
+// New seach component created
 const Container = styled(NesContainer)`
   && {
     background: white;
@@ -58,10 +59,12 @@ const Pokemon: React.FC<RouteComponentProps & { clickLink: Function }> = ({
   if (error || !pokemonList) {
     return <p>Error!</p>
   }
-
+// I am just rendering the search component below, it also has the filtering form.
   return (
     <Container rounded>
+      <Search clickLink={clickLink} path="/" /> 
       <List>
+        Default Pokemon
         {pokemonList.map(pokemon => (
           <Link to={pokemon.id} onMouseDown={clickLink as any}>
             <ListItem>
